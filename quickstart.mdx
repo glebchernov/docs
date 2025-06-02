@@ -1,97 +1,63 @@
 ---
-title: 'Quickstart'
-description: 'Start building awesome documentation in under 5 minutes'
+title: "Quick start guide"
+description: "Here is everything to get you started in Readymag."
 ---
 
-## Setup your development
+Click the red plus button next to your user pic to start a new project from your account page.  This will load an empty Editor window with two panels at the bottom. 
 
-Learn how to update your docs locally and deploy them to the public.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YSxO3Lc2LKU?si=LprmsgEYWzLqJ5K5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen />
 
-### Edit and preview
+## Organizing pages in your project
 
-<AccordionGroup>
-  <Accordion icon="github" title="Clone your docs locally">
-    During the onboarding process, we created a repository on your Github with
-    your docs content. You can find this repository on our
-    [dashboard](https://dashboard.mintlify.com). To clone the repository
-    locally, follow these
-    [instructions](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
-    in your terminal.
-  </Accordion>
-  <Accordion icon="rectangle-terminal" title="Preview changes">
-    Previewing helps you make sure your changes look as intended. We built a
-    command line interface to render these changes locally. 
-    1. Install the
-    [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview the
-    documentation changes locally with this command: ``` npm i -g mintlify ```
-    2. Run the following command at the root of your documentation (where
-    `docs.json` is): ``` mintlify dev ```
-    <Note>
-      If you’re currently using the legacy ```mint.json``` configuration file, please update the Mintlify CLI:
+The first icon on the left panel shows where you are in your project’s page count. Click on it to see a list of pages or to add a new page. You can also use the M [shortcut](/hc/en-us/articles/360020647532). 
 
+From here, you can rearrange, duplicate, and delete pages. You can also access and edit [SEO settings](/hc/en-us/articles/360020844431) like title, description, keyword, and URLs.
 
-      ```npm i -g mintlify@latest```
-      And run the new upgrade command in your docs repository:
+![Basics1 Gi](/images/basics1.gif)
 
-      ```mintlify upgrade```
-      You should now be using the new ```docs.json``` configuration file. Feel free to delete the ```mint.json``` file from your repository.
-    </Note>
-  </Accordion>
-</AccordionGroup>
+Click on ‘Page title’ to modify titles or click ‘Custom URL’ to edit how the associated URL will appear to visitors. You can also create nested pages from here by dragging and dropping the desired page at the center of the previous page preview. 
 
-### Deploy your changes
+Say you’ve built a portfolio under [myportfolio.com](http://myportfolio.com). There are also several categories for different projects that you’ve created for your clients, including one for non-profit organizations under the URL myportfolio.com/non-profit/. You can create separate pages for each of your non-commercial projects, then collect them under the category. Each page will have a related URL, like myportfolio.com/non-profit/project1, myportfolio.com/non-profit/project2, etc.
 
-<AccordionGroup>
+You can organize the transition between pages in a published project in two ways: 
 
-<Accordion icon="message-bot" title="Install our Github app">
-  Our Github app automatically deploys your changes to your docs site, so you
-  don't need to manage deployments yourself. You can find the link to install on
-  your [dashboard](https://dashboard.mintlify.com). Once the bot has been
-  successfully installed, there should be a check mark next to the commit hash
-  of the repo.
-</Accordion>
-<Accordion icon="rocket" title="Push your changes">
-  [Commit and push your changes to
-  Git](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository#about-git-push)
-  for your changes to update in your docs site. If you push and don't see that
-  the Github app successfully deployed your changes, you can also manually
-  update your docs through our [dashboard](https://dashboard.mintlify.com).
-</Accordion>
+1. Pages exist independently of each other. Your visitors switch between them using the horizontal navigation arrows (Preview —\> Settings —\> enable Navigation arrows) or using links created by you (e.g., via the navigation menu). This type of navigation is enabled in all projects by default.
+2. Your visitors can scroll through pages vertically from the first to the last page. To turn on this type of navigation, go to Preview and enable Stack all pages vertically. You can also enable arrows for easier navigation (Preview —\> Settings —\> enable Navigation arrows) or add the Slide-in Transition effect (Preview —\> Settings —\> enable Slide-in Transition). With this effect, the page will slide out from under the previous page. 
 
-</AccordionGroup>
+![Basics2 Gi](/images/basics2.gif)
 
-## Update your docs
+## Editing layouts for different devices
 
-Add content directly in your files with MDX syntax and React components. You can use any of our components, or even build your own.
+Click the Devices icon on the left panel to add a mobile and tablet layout, or to switch between them. You can also use the shortcuts 1/2/3. Learn more [here](/hc/en-us/articles/15149524826651).
 
-<CardGroup>
+![Basics3 Gi](/images/basics3.gif)
 
-<Card title="Add Content With MDX" icon="file" href="/essentials/markdown">
-  Add content to your docs with MDX syntax.
-</Card>
+## Adding widgets
 
-<Card
-  title="Add Code Blocks"
-  icon="square-code"
-  href="/essentials/code"
->
-  Add code directly to your docs with syntax highlighting.
-</Card>
+All projects in Readymag are built with widgets. To add a new widget, click on the Plus button at the bottom left panel or use the shortcut W. Learn more about different types of widgets in the Widgets section of our Help.
 
-<Card
-  title="Add Images"
-  icon="image"
-  href="/essentials/images"
->
-  Add images to your docs to make them more engaging.
-</Card>
+![Basics4 Gi](/images/basics4.gif)
 
-<Card
-  title="Add Custom Components"
-  icon="puzzle-piece"
-  href="/essentials/reusable-snippets"
->
-  Add templates to your docs to make them more reusable.
-</Card>
+ To view a list of widgets already added to your project, click the Layers icon or use the shortcut Q. 
 
-</CardGroup>
+## Background
+
+To change your project background, click on Layers at the bottom left panel —\> Background. Learn more about different types of backgrounds [here](/hc/en-us/articles/360021875172). 
+
+## Lock layout
+
+Click ‘Lock layout’ to switch to the editing mode, which allows you to modify content and some widget attributes without damaging the rest of your layout. Find more information [here](https://help.readymag.com/hc/en-us/articles/5063595458203). 
+
+## Grid and Layout
+
+Set grid and guides for your project, enable or disable Scale Layout, enable Blocks, etc. Read more [here](/hc/en-us/articles/360022086071). 
+
+## Project settings
+
+From your project settings, you can specify the title of your project, add a description and keywords, map a custom domain, set a password, etc. Learn more in the Project settings of our Help.
+
+## Preview mode
+
+To preview your page, click the Eye icon at the bottom of the Editor window. From Preview mode, you can publish your project and then open the published version. To keep editing, click the Pencil icon.
+
+You can also customize project appearance from here: stack pages, enable Navigation arrows, customize a project menu, sharing buttons, etc.

@@ -1,71 +1,113 @@
 ---
-title: Introduction
-description: "Welcome to the home of your new documentation"
+mode: "custom"
+title: "ReadyMag Documentation"
 ---
 
-<img
-  className="block dark:hidden"
-  src="/images/hero-light.png"
-  alt="Hero Light"
-/>
-<img
-  className="hidden dark:block"
-  src="/images/hero-dark.png"
-  alt="Hero Dark"
-/>
+export function openSearch() {
+  document.getElementById('search-bar-entry').click();
+}
 
-## Setting up
+<div className="relative w-full flex items-center justify-center" style={{ height: '26rem', overflow: 'hidden'}}>
+<div className="absolute inset-0 bg-primary dark:bg-primary-light" style={{opacity: 0.05 }}></div>
+  <div style={{ position: 'absolute', textAlign: 'center', padding: '0 1rem' }}>
+    <div
+      className="text-gray-900 dark:text-white"
+      style={{
+       fontWeight: '800',
+       fontSize: '2.5rem',
+       margin: '0',
+       marginTop: '5rem'
+      }}
+    >
+      Welcome to Readymag Docs!
+    </div>
+    <p className="mt-4 text-gray-900 dark:text-white" style={{ fontSize: '1rem', fontWeight: '600' , maxWidth: '40rem'}}>How can we help you? </p>
+    <div className="flex items-center justify-center" style={{ maxWidth: '800px', margin: '0 auto' }}>
+    <button
+      type="button"
+      className="hidden w-full lg:flex items-center text-sm leading-6 py-4 pl-4 pr-4 text-gray-500 rounded-full"
+      id="home-search-entry"
+      style={{
+        marginTop: '2rem',
+        maxWidth: '40rem',
+        background: '#FFF',
+        boxShadow: '0px 1px 4px 0px rgba(8, 9, 10, 0.25), 0px 0px 0px 4px rgba(255, 255, 255, 0.20)',
+        cursor: 'pointer',
+        textAlign: 'left',
+      }}
+      onClick={openSearch}
+    >
+      <svg
+        className="h-4 w-4 ml-1.5 flex-none bg-primary hover:bg-gray-600 dark:bg-primary-dark dark:hover:bg-white/70"
+        style={{
+        marginRight: '0.5rem',
+         maskImage:
+           'url("https://mintlify.b-cdn.net/v6.5.1/solid/magnifying-glass.svg")',
+         maskRepeat: 'no-repeat',
+         maskPosition: 'center center',
+        }}
+      />
+      Search or ask...
+    </button>
+    </div>
+  </div>
+</div>
+<div
+  style={{marginTop: '2rem', marginBottom: '8rem', maxWidth: '70rem', marginLeft: 'auto',
+  marginRight: 'auto', paddingLeft: '1.25rem',
+  paddingRight: '1.25rem' }}
+>
 
-The first step to world-class documentation is setting up your editing environments.
 
-<CardGroup cols={2}>
+
+<CardGroup cols={3}>
   <Card
-    title="Edit Your Docs"
+    title="Editor and Widgets"
     icon="pen-to-square"
-    href="https://mintlify.com/docs/quickstart"
-  >
-    Get your docs set up locally for easy development
-  </Card>
-  <Card
-    title="Preview Changes"
-    icon="image"
-    href="https://mintlify.com/docs/development"
-  >
-    Preview your changes before you push to make sure they're perfect
-  </Card>
-</CardGroup>
+    iconType="solid"
+    href="hc/en-us/articles/360046274652-Quick-start-guide"
+    horizontal
+  />
 
-## Make it yours
-
-Update your docs to your brand and add valuable content for the best user conversion.
-
-<CardGroup cols={2}>
   <Card
-    title="Customize Style"
-    icon="palette"
-    href="https://mintlify.com/docs/settings/global"
-  >
-    Customize your docs to your company's colors and brands
-  </Card>
+    title="Managing Projects"
+    icon="folder-open"
+    iconType="solid"
+    href="hc/en-us/articles/9890668000027-Disconnecting-a-domain"
+    horizontal
+  />
+
   <Card
-    title="Reference APIs"
+    title="Custom Code and Integrations"
     icon="code"
-    href="https://mintlify.com/docs/api-playground/openapi"
-  >
-    Automatically generate endpoints from an OpenAPI spec
-  </Card>
+    iconType="solid"
+    href="hc/en-us/articles/26933451909019-Plausible"
+    horizontal
+  />
+
   <Card
-    title="Add Components"
-    icon="screwdriver-wrench"
-    href="https://mintlify.com/docs/content/components/accordions"
-  >
-    Build interactive features and designs to guide your users
-  </Card>
+    title="Account"
+    icon="user"
+    iconType="solid"
+    href="hc/en-us/articles/360029207592-Password-email"
+    horizontal
+  />
+
   <Card
-    title="Get Inspiration"
-    icon="stars"
-    href="https://mintlify.com/customers"
-  >
-    Check out our showcase of our favorite documentation
-  </Card>
+    title="Billing and Plans"
+    icon="credit-card"
+    iconType="solid"
+    href="#"
+    horizontal
+  />
+
+  <Card
+    title="Technical Questions and Issues"
+    icon="circle-question"
+    iconType="solid"
+    href="hc/en-us/articles/faq"
+    horizontal
+  />
 </CardGroup>
+
+</div>

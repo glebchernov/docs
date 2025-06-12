@@ -1,0 +1,57 @@
+---
+title : "Disconnecting a Domain"
+description : "Here’s what to do if you need to fully disconnect your domain from the Readymag server."
+---
+
+
+
+## 1\. Find the domain tab and unmap your domain
+
+#### **If is it connected to one of your projects**
+
+Access your project’s editor. From the bottom-right dock, open the project settings panel, reach the domain tab, and click the ‘Unmap’ button.
+
+<Frame>
+[![Disconnecting-domain-from-project.gif](https://help.readymag.com/hc/article_attachments/16780481386011)](https://help.readymag.com/hc/article_attachments/16780481386011)
+</Frame>
+
+Once the domain has been unmapped, your project will remain published but will only be accessible through the default Readymag URL. Click ‘Unpublish’ in the Project settings if you want to take your project completely offline.
+
+<Frame>
+[![Unpublishing-project.gif](https://help.readymag.com/hc/article_attachments/16780481387547)](https://help.readymag.com/hc/article_attachments/16780481387547)
+</Frame>
+
+#### **If is it connected to your public profile**
+
+Go to your Readymag account’s settings page, navigate to the Public Profile section, and click 'Unmap domain.' 
+
+<Frame>
+[![Unpublish-domain-from-profile.gif](https://help.readymag.com/hc/article_attachments/16780929349915)](https://help.readymag.com/hc/article_attachments/16780929349915)
+</Frame>
+
+## 2\. Remove your records from your DNS panel
+
+If you no longer wish to have your domain pointing to the Readymag server, please go to your DNS panel, which you can access from your domain provider’s side, and delete all records related to Readymag.
+
+Here are the usual records we suggest our users add when mapping a domain:
+
+| Type: | A |
+| --- | --- |
+| Host: | @ |
+| Point To (Value): | 54.194.41.141 |
+
+| Type: | TXT |
+| --- | --- |
+| Host: | @ |
+| Point To (Value): | *your verification key* |
+
+If your project was also configured for access using the prefix ‘www’ then make sure also to delete this record:
+
+| Type: | CNAME |
+| --- | --- |
+| Host: | www |
+| Point To (Value): | domains.readymag.com |
+
+<Info>
+Make sure to delete any other extra records you may have added due to special configurations requested by your registrar.
+</Info>

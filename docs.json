@@ -1,56 +1,97 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Readymag Help",
+  "name": "Readymag",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#ff5900",
+    "light": "#ff5900",
+    "dark": "#ff5900"
   },
-  "favicon": "/favicon.svg",
+  "appearance": {
+    "default": "light"
+  },
+  "fonts": {
+    "heading": {
+      "family": "custom_37866_bold",
+      "source": "https://c-p.rmcdn1.net/custom-fonts/font-bf65ead4-4744-45e1-9517-8c3a217ed31c.woff2",
+      "format": "woff2"
+    },
+    "body": {
+      "family": "custom_37866_regular",
+      "source": "https://c-p.rmcdn1.net/custom-fonts/font-d9f62b25-b242-4e79-85f4-1f93117dd967.woff",
+      "format": "woff"
+    }
+  },
+  "favicon": "/favicon.png",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Home",
+        "pages": ["index"]
+      },
+      {
+        "tab": "Editor and Widgets",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Getting Started",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "hc/en-us/articles/360046274652-Quick-start-guide",
+              "hc/en-us/articles/360020647532-Shortcuts"
             ]
           },
           {
-            "group": "Essentials",
+            "group": "Editor",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "hc/en-us/articles/5063595458203-Editor-modes",
+              "hc/en-us/articles/360022086071-Grid-and-Layout",
+              "hc/en-us/articles/360018140432-Layers"
+            ]
+          },
+          {
+            "group": "Widgets",
+            "pages": [
+              "hc/en-us/articles/14645512799259-Presets",
+              "hc/en-us/articles/16915363150619-Group-editing-of-widgets"
             ]
           }
         ]
       },
       {
-        "tab": "API Reference",
+        "tab": "Managing Projects",
         "groups": [
           {
-            "group": "API Documentation",
+            "group": "Domain Mapping",
             "pages": [
-              "api-reference/introduction"
+              "hc/en-us/articles/9890668000027-Disconnecting-a-domain",
+              "hc/en-us/articles/4403977507995-Сombining-several-projects-under-one-domain"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tab": "Custom Code & Integrations",
+        "groups": [
           {
-            "group": "Endpoint Examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
+            "group": "Integrations",
+            "pages": ["hc/en-us/articles/26933451909019-Plausible"]
+          }
+        ]
+      },
+      {
+        "tab": "Account",
+        "groups": [
+          {
+            "group": "Profile Settings",
+            "pages": ["hc/en-us/articles/360029207592-Password-email"]
+          }
+        ]
+      },
+      {
+        "tab": "Technical Questions & Issues",
+        "groups": [
+          {
+            "group": " ",
+            "pages": ["hc/en-us/articles/faq"]
           }
         ]
       }
@@ -58,18 +99,18 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
+          "anchor": "Forum",
+          "href": "https://forum.readymag.com/",
+          "icon": "comments"
+        },
+        {
+          "anchor": "Learn",
+          "href": "https://readymag.com/learn",
           "icon": "book-open-cover"
         },
         {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
           "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
+          "href": "https://blog.readymag.com/",
           "icon": "newspaper"
         }
       ]
@@ -77,26 +118,27 @@
   },
   "logo": {
     "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "dark": "/logo/dark.svg",
+    "href": "https://readymag.com/"
   },
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Log in",
+        "href": "https://readymag.com/auth/login"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Sign up",
+      "href": "https://readymag.com/auth/join"
     }
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "instagram": "https://instagram.com/readymag/",
+      "youtube": "https://www.youtube.com/@Readymag",
+      "linkedin": "https://www.linkedin.com/company/readymag/"
     }
   }
 }
